@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sirius Book Store</title>
+    <!-- Start Slider --> 
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+    <!--JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="main.js" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" width="150" hight="75" alt="">
+            
+        </div>
+        <div  class="sepet">
+            <img  src="images/sepet.png" width="100" hight="100" alt="">
+        </div>
+        <div  class="search">
+            
+            <img  src="images/ara.png" width="250" hight="100" alt="">
+        </div>
+        
+        
+        
+    </header>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Çok Satan Kitaplar</a></li>
+                <li><a href="index.html">Yeni Çıkan Kitaplar</a></li>
+                <li><a href="index.html">Ürünlerimiz</a>
+                <ul>
+                   <li><a href="roman.html">Roman</a></li>
+                   <li><a href="hikaye.html">Hikaye</a></li>
+                   <li><a href="diger.html">Diğer</a></li>
+                </ul>
+            </li>
+                <li><a href="index.html">Birimlerimiz</a>
+                    <ul>
+                        <li><a href="insanKaynaklari.html">İnsan Kaynakları</a></li>
+                        <li><a href="musteriHizmetleri.html">Müşteri Hizmetleri</a></li>
+                        <li><a href="arge.html">Arge</a></li>
+                     </ul>
+                </li>
+                <li><a href="index.html">Ne Okusam?</a></li>
+                <li><a href="login.html">Önerileriniz?</a></li>
+            </ul>
+    
+        </div>
+        
+    </header>
+
+    <div id="sayfagrid"> <!-- paneller -->
+        <div style="background-color: dodgerblue"> <!-- sol menü barı-->
+            <br> <br>
+            <h2 style="color:black; text-align: center; text-align: center; border: 1px solid black; font-size:25px; font-weight:bold;"> KİTAP TÜRLERİ </h2> <br>
+            <button onclick="resetlemeoparator()"style=" font-size: 20px; background-color: dodgerblue; padding: 5px 32%;color:black;border-color: dodgerblue;">Tüm Kitaplar</button><br>
+            
+            <button onclick="macerasilmeoperatoru()" style=" font-size: 20px; background-color: dodgerblue; padding: 5px 34.50%;color:black;border-color: dodgerblue;">MACERA</button> <br>
+            <button onclick="polisiyesilmeoperatoru()"style=" font-size: 20px; background-color: dodgerblue; padding: 5px 34%;color:black;border-color: dodgerblue;">POLİSİYE</button><br>
+            <button onclick="bilimkurgusilmeoperatoru()"style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">BİLİM KURGU</button><br>
+            
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">ANI</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">ANLATI</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">ARAŞTIRMA İNCELEME</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">BİLİM</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">BİYOGRAFİ</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">ÇİZGİ ROMAN</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">DENEME</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">EDEBİYAT</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">EĞİTİM</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">FELSEFE</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">GENÇLİK</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">GEZİ</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">HİKAYE</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">KİŞİSEL GELİŞİM</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">MASAL</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">ÖYKÜ</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">PSİKOLOJİ</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">SAĞLIK</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">SANAT TASARIM</button><br>      
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">SANAT MÜZİK</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">SİNEMA TARİHİ</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">SOSYOLOJİ</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">ŞİİR</button><br>
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">TARİH</button><br>     
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">TİYATRO</button><br>  
+            <button style=" font-size: 20px; background-color: dodgerblue; padding: 5px 33%;color:black;border-color: dodgerblue;">YEMEK KİTAPLARI</button><br>
+        </div>
+        
+        <div > <!-- orta alan-->
+            <div class="slider">
+                <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+        <div id="wowslider-container1">
+            <div class="ws_images"><ul>
+                <li><img src="data1/images/balang_dan_brown.jpg" alt="Başlangıç Dan Brown" title="Başlangıç Dan Brown" id="wows1_0"/></li>
+                <li><a href="http://wowslider.net"><img src="data1/images/balk_ve_olu_zlf_livaveli.jpg" alt="bootstrap carousel" title="Balıkçı ve Oğlu Zülfü Livaveli" id="wows1_1"/></a></li>
+                <li><img src="data1/images/dune_frank_herbert.jpg" alt="Dune Frank Herbert" title="Dune Frank Herbert" id="wows1_2"/></li>
+            </ul></div>
+            <div class="ws_bullets"><div>
+                <a href="#" title="Başlangıç Dan Brown"><span><img src="data1/tooltips/balang_dan_brown.jpg" alt="Başlangıç Dan Brown"/>1</span></a>
+                <a href="#" title="Balıkçı ve Oğlu Zülfü Livaveli"><span><img src="data1/tooltips/balk_ve_olu_zlf_livaveli.jpg" alt="Balıkçı ve Oğlu Zülfü Livaveli"/>2</span></a>
+                <a href="#" title="Dune Frank Herbert"><span><img src="data1/tooltips/dune_frank_herbert.jpg" alt="Dune Frank Herbert"/>3</span></a>
+            </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery image slider</a> by WOWSlider.com v9.0</div>
+            <div class="ws_shadow"></div>
+            </div>	
+            <script type="text/javascript" src="engine1/wowslider.js"></script>
+            <script type="text/javascript" src="engine1/script.js"></script>
+            <!-- Slider.com -->
+            </div>
+            <div id="kitaplar">
+                <div class="ortakitap">
+                    <div class="macera">
+                        <h1> DAN BROWN </h1>
+                        
+                        <button onclick="davincisifresi()" id="buttonresim"> <img src="resimler\kitaplar\dan brown\0000000142987-1.jpg"; width="200px";> </button>
+                        <button onclick="meleklerveseytan()" id="buttonresim"> <img src="resimler\kitaplar\dan brown\0000000151552-1.jpg"; width="200px";> </button>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\dan brown\0000000176503-1.jpg"; width="200px";> </button>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\dan brown\0000000317832-1.jpg"; width="200px";> </button>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\dan brown\0000000442778-1.jpg"; width="200px";> </button>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\dan brown\0001720220001-1.jpg"; width="200px";> </button>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\dan brown\wi_800.jpg"; width="200px";> </button>
+                    </div>
+                    <div class="polisiye">
+                        <h1> SHERLOCK HOLMES </h1>
+                       
+                        <button onclick="detaydasaklı()" id="buttonresim"> <img src="resimler\kitaplar\sherlock holmes\0000000391110-1.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\sherlock holmes\0000000400586-1.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\sherlock holmes\0000000410561-1.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\sherlock holmes\0000000420489-1.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\sherlock holmes\akil-oyunlarinin-golgesinde.jpg"; width="200px";>
+                    </div>
+                    <div class="bilimkurgu">
+                        <h1> HARRY POTTER </h1>
+                        
+                        <button onclick="felsefetasi()" id="buttonresim"> <img src="resimler\kitaplar\harry potter\0000000105599-1.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\harry potter\0000000105931-1.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\harry potter\0000000107298-1.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\harry potter\1589014385.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\harry potter\mih_20.jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\harry potter\mih_200 (1).jpg"; width="200px";>
+                        <button onclick="" id="buttonresim"> <img src="resimler\kitaplar\harry potter\mih_200.jpg"; width="200px";>
+                    </div>
+                </div>
+                
+                
+                <!-- özel kitaplar -->
+                <div class="ozelkitap">
+                    <div class="davincininsifresi">
+                        <div id="kitapgrid">
+                            <div>
+                                <img src="resimler\kitaplar\dan brown\0000000142987-1.jpg"; style="vertical-align: text-top;" alt="Dan brown davinci şifresi"; width="250px";>
+                            </div>
+                            <div>
+                                <p style="color: black;"><br><b> Yazar: </b> DAN BROWN <br><br><b> Yayın Evi: </b> Altın kitaplar <br><br><b style="font-size: 30px">Ücret: 34,99</b></p>
+                                <br><br><br>
+                                <button onclic="" style="color: black;">SEPETE EKLE</button>
+                            </div>
+                            <div>
+                                <p style="color: black;"> Yorumlar:</p>
+                                <div style="background-color: rgb(255, 255, 255); color: black"> <p style="height:300px">Ali kütük: çok güzel bir kitap, Dan Brownun diğer kitaplarınıda okumayı düşünüyorum<br><br> Hasan kozak: okurken kendimi kaybettim ilk okumamda 120'nci sayfaya gelmişim. </p></div>
+                                <input type="search" style="width:100%; color: black;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meleklerveseytanlar">
+                        <div id="kitapgrid">
+                            <div>
+                                <img src="resimler\kitaplar\dan brown\0000000151552-1.jpg"; style="vertical-align: text-top;" alt="Dan brown davinci şifresi"; width="250px";>
+                            </div>
+                            <div>
+                                <p style="color: black;"><br><b> Yazar: </b> DAN BROWN <br><br><b> Yayın Evi: </b> Altın kitaplar <br><br><b style="font-size: 30px">Ücret: 39,99</b></p>
+                                <br><br><br>
+                                <button onclic="" style="color: black;">SEPETE EKLE</button>
+                            </div>
+                            <div>
+                                <p style="color: black;"> Yorumlar:</p>
+                                <div style="background-color: white; color: black"> <p style="height:300px">Ali kütük: çok güzel bir kitap, Dan Brownun diğer kitaplarınıda okumayı düşünüyorum<br><br> Hasan kozak: okurken kendimi kaybettim ilk okumamda 120'nci sayfaya gelmişim. </p></div>
+                                <input type="search" style="width:100%;color: black;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sucdetaydasaklı">
+                        <div id="kitapgrid">
+                            <div>
+                                <img src="resimler\kitaplar\sherlock holmes\0000000391110-1.jpg"; style="vertical-align: text-top;" width="250px";>
+                            </div>
+                            <div>
+                                <p style="color: black;"><br><b> Yazar: </b> Sir Arthur Cona Doyle <br><br><b> Yayın Evi: </b> Martı yayınları <br><br><b style="font-size: 30px">Ücret: 24,99</b></p>
+                                <br><br><br>
+                                <button onclic="" style="color: black;">SEPETE EKLE</button>
+                            </div>
+                            <div>
+                                <p style="color: black;"> Yorumlar:</p>
+                                <div style="background-color: white; color: black"> <p style="height:300px">Ulaş Göncüoğlu: Soluksuz okuyacağınızı düşündüğüm bir kitap herkese öneriyorum<br><br> Merve Tekin: Suç ve gizemi Akıcı bir Dille anlatılmış</p></div>
+                                <input type="search" style="width:100%;color: black;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vefelsefetasi">
+                        <div id="kitapgrid">
+                            <div>
+                                <img src="resimler\kitaplar\harry potter\0000000105599-1.jpg"; style="vertical-align: text-top;" width="250px";>
+                            </div>
+                            <div>
+                                <p style="color: black;"><br><b> Yazar: </b> J.K. ROWLİNG <br><br><b> Yayın Evi: </b> Yapı Kredi Yayınları <br><br><b style="font-size: 30px">Ücret: 19,99</b></p>
+                                <br><br><br>
+                                <button onclic="" style="color: black;">SEPETE EKLE</button>
+                            </div>
+                            <div>
+                                <p style="color: black;"> Yorumlar:</p>
+                                <div style="background-color: white; color: black"> <p style="height:300px">Fatih Küçükdere: oğluma aldım çok beyendi<br><br> Fatma Kızılok: kızıma almıştım ama beğenmediğini söylüyor iade etmek istiyoruz.</p></div>
+                                <input type="search" style="width:100%;color: black;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: dodgerblue"> <!-- sağ menü barı-->
+            <br> <br>
+            <h2 style="color: black; text-align: center; text-align: center; border: 1px solid rgba(0, 0, 0, 0.8); font-size:25px; font-weight: bold;"> KAMPANYALAR </h2> <br>
+            
+            <br>
+
+            <img id="duyururesim" src="resimler\duyurular\1.jpeg">
+            <img id="duyururesim" src="resimler\duyurular\2.jpeg">
+            <img id="duyururesim" src="resimler\duyurular\3.jpeg">
+            <img id="duyururesim" src="resimler\duyurular\4.jpeg">
+            <img id="duyururesim" src="resimler\duyurular\5.jpeg">
+        </div>
+    
+        
+    </div>
+    <!--Ulaş end-->
+    <footer>
+        <div class="footer">
+            <nav>
+                <ul>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="vizyonMisyon.html">Vizyon ve Misyonumuz</a></li>
+                    
+                </ul>
+            </nav>
+            <div style="clear:both;"></div>
+            <hr/>
+            <p>
+               Adres: Kabaoğlu, 41000 İzmit/Kocaeli  
+               <br>
+               Telefon: (0262) 303 10 00  
+               <br>
+               Web: www.siriusbook.com
+
+            </p>
+            <hr/>
+            <p>
+                Web Tasarım İletişim:
+                <br><br/>
+                Merve Tekin: 181307044@kocaeli.edu.tr
+                <br>
+                Ulaş Göncüoğlu: 191307061@kocaeli.edu.tr
+            </p>
+
+        </div>
+        <div class="sosyalMedyaHesaplari">
+            <h2>Bizi Takip Edin</h2>
+            <a class="twitter"></a>
+            <span class="fa fa-twitter"></span>
+            <a class="facebook"></a>
+            <span class="fa fa-facebook"></span>
+            <a class="instagram"></a>
+            <span class="fa fa-instagram"></span>
+            <a class="youtube"></a>
+            <span class="fa fa-youtube"></span>
+            <img src="images/twitter.png" width="50" hight="50" alt="">
+            <img src="images/facebook.png" width="50" hight="50" alt="">
+            <img src="images/instagram.png" width="50" hight="50" alt="">
+            <img src="images/youtube.png" width="50" hight="50" alt="">
+        </div>
+        <div class="yasal">
+            <hr><hr/>
+            <p>© Copyright 2000- 2021 Sirius Kitap Mağazacılık ve Pazarlama A.Ş. Tüm hakları saklıdır.</p>
+        </div>  
+
+    </footer>
+    <!--<div style="margin-bottom:10px"></div>-->
+</body>
+
+
+<script>
+    function coksatanbuton() {
+                var x = document.getElementsByClassName("bilimkurgu");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("polisiye");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                
+                var x = document.getElementsByClassName("macera");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("ozelkitap");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("ozelkitap");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+                var x = document.getElementsByClassName("ortakitap");
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i].style.display === "none"){
+                        x[i].style.display = "block";
+                    }
+                }
+            }
+    
+            function macerasilmeoperatoru() {
+                var x = document.getElementsByClassName("bilimkurgu");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("polisiye");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                
+                var x = document.getElementsByClassName("macera");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+                var x = document.getElementsByClassName("ozelkitap");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("ortakitap");
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i].style.display === "none"){
+                        x[i].style.display = "block";
+                    }
+                }
+            }
+            
+            
+        
+            
+            function polisiyesilmeoperatoru() {
+                var x = document.getElementsByClassName("macera");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("bilimkurgu");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                
+                var x = document.getElementsByClassName("polisiye");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+                var x = document.getElementsByClassName("ozelkitap");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("ortakitap");
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i].style.display === "none"){
+                        x[i].style.display = "block";
+                    }
+                }
+            }
+            
+            
+            
+            
+            function bilimkurgusilmeoperatoru() {
+                
+                var x = document.getElementsByClassName("macera");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("polisiye");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                
+                var x = document.getElementsByClassName("bilimkurgu");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+                var x = document.getElementsByClassName("ozelkitap");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                var x = document.getElementsByClassName("ortakitap");
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i].style.display === "none"){
+                        x[i].style.display = "block";
+                    }
+                }
+            }
+            
+            
+            
+            function resetlemeoparator() {
+                var x = document.getElementsByClassName("macera");
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i].style.display === "none"){
+                        x[i].style.display = "block";
+                    }
+                }
+                var x = document.getElementsByClassName("polisiye");
+                for (var i = 0; i < x.length; i++) {
+                    if (x[i].style.display === 'none') {
+                        x[i].style.display = "block";
+                    }
+                }
+                
+                var x = document.getElementsByClassName("bilimkurgu");
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i].style.display === "none"){
+                        x[i].style.display = "block";
+                    }
+                }
+                var x = document.getElementsByClassName("ortakitap");
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i].style.display === "none"){
+                        x[i].style.display = "block";
+                    }
+                }
+            }
+        
+            
+            /*Kitap Bilgileri */
+            function ortakitapsilme() {
+                var x = document.getElementsByClassName("ortakitap");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+            }
+            function ozelkitapekle(){
+                var x = document.getElementsByClassName("ozelkitap");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+            }
+            //kitaplar özel kısım
+            function davincisifresi() {
+			ortakitapsilme();
+			ozelkitapekle();
+			var x = document.getElementsByClassName("davincininsifresi");
+			for (var i = 0; i < x.length; i++) {
+				if(x[i].style.display === "none"){
+					x[i].style.display = "block";
+				}
+			}
+			var x = document.getElementsByClassName("meleklerveseytanlar");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("vefelsefetasi");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("sucdetaydasaklı");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+		function meleklerveseytan() {
+			ortakitapsilme();
+			ozelkitapekle();
+			var x = document.getElementsByClassName("meleklerveseytanlar");
+			for (var i = 0; i < x.length; i++) {
+				if(x[i].style.display === "none"){
+					x[i].style.display = "block";
+				}
+			}
+			var x = document.getElementsByClassName("davincininsifresi");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("vefelsefetasi");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("sucdetaydasaklı");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+		function detaydasaklı(){
+			ortakitapsilme();
+			ozelkitapekle();
+			var x = document.getElementsByClassName("sucdetaydasaklı");
+			for (var i = 0; i < x.length; i++) {
+				if(x[i].style.display === "none"){
+					x[i].style.display = "block";
+				}
+			}
+			var x = document.getElementsByClassName("davincininsifresi");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("meleklerveseytanlar");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("vefelsefetasi");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+		
+		function felsefetasi(){
+			ortakitapsilme();
+			ozelkitapekle();
+			var x = document.getElementsByClassName("vefelsefetasi");
+			for (var i = 0; i < x.length; i++) {
+				if(x[i].style.display === "none"){
+					x[i].style.display = "block";
+				}
+			}
+			var x = document.getElementsByClassName("davincininsifresi");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("meleklerveseytanlar");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			var x = document.getElementsByClassName("sucdetaydasaklı");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+        </script>
+
+
+</html>

@@ -1,0 +1,243 @@
+header{
+    background: black;
+    height: 45px;
+    
+   
+}
+
+.menu ul {
+    position:absolute;
+    left: 250px;
+    
+}
+ .menu ul li {
+    float: left;
+    font-size: 20px;
+}
+
+
+.menu ul li a{
+    padding: 10px;
+    color:#eee;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    
+    
+}
+.menu ul li a:hover{
+    text-decoration: none;
+    color: white;
+    background: dodgerblue;
+}
+
+.menu ul li ul{
+    display: none;
+    
+    
+}
+.menu ul li:hover ul{
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    
+        
+}
+.menu ul li:hover ul li{
+    float: none;
+    color: white;
+    margin-left: 75px;
+    background: black;
+    text-decoration: none;
+    width: 100%;
+    
+    
+  
+}
+
+
+
+
+.logo img{
+    float:left;
+    /*margin-left: 10px;*/
+}
+.search img{
+    
+    margin:auto; 
+    position: center;
+    display:block;
+    
+    
+}
+
+
+footer{
+    height: 300px;
+    background: black;
+}
+.footer{
+    position: absolute;
+    left: 200px;
+}
+.footer ul li{
+    float: left;
+    font-size: 20px;
+
+}
+.footer ul li a{
+    display:block;
+    padding: 15px;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color:dodgerblue;
+    /*background: dodgerblue;*/
+}
+footer ul li a{
+    padding: 10px;
+    color:#eee;
+    font-family: Arial, Helvetica, sans-serif;
+      
+}
+.footer p{
+    color:rgb(212, 202, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.1;
+}
+.sosyalMedyaHesaplari{
+    float: right;
+    position: absolute;
+    right: 150px;
+    width: 400px;
+    height: 100px;
+    
+    margin-top: 20px;
+}
+.sosyalMedyaHesaplari h2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+.sepet img{
+    float:right;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+
+    
+    
+}
+.sepet img:hover{
+background: dodgerblue;  
+    
+}
+.yasal hr{
+    margin-top: 240px;
+    
+}
+.yasal p{
+    color:#ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    
+}
+
+footer img{
+    margin-top: 5px;
+    padding: 2px;
+    margin-left: 10px;
+    
+}
+footer img:hover{
+    background:blue;
+}
+/* urunlerimiz.html*/
+.icerikler{
+    height: 600px;
+    
+}
+.baslık{
+    width: fullscreen;
+    margin: auto;
+    text-align: center;
+    /*uigradient*/
+    background: #7f7fd5; 
+    background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); 
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); 
+    padding:5px;
+    
+
+}
+.baslık h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+.baslık span{
+    font-size: 20px;
+    color:black;
+    
+}
+.romanicerik{
+    background:white;
+    height:700px;
+    position: relative;/* bulunduğu div den referans alır*/
+    
+}
+
+/*ulaş*/
+/* .icon-bar{ üst tarafta icon bar özelliği width sayfanın ne kadarını kaplayacak */
+/* icon-bar a { icon barın şeklini boyutlarını gibi özellikleri belirlediğimiz yer width parçalara ayırma*/
+/* .icon-bar a:hover{ üzerine gelindiğinde rengi özelliği */
+
+    
+    
+    
+    
+
+    #sayfagrid{
+        display: grid;
+        grid-template-columns: 20% 60%  20%;
+        grid-template-rows: 100%;
+    }
+    
+    
+    #kitapgrid{
+        display:grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 100%;
+    }
+    
+    #kitaplar{
+        background-color: #bad3f0;
+        color: white;
+        border: 2px solid black;
+        margin: auto;
+        padding: 10px;
+        display: block;
+    }
+    
+    #buttonresim{
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color: #940b0b;
+    }
+    
+    #kitapaciklama{
+        size: 5px;
+    }
+
+    #duyururesim{
+        border: 5px outset black;
+        vertical-align: text-top;
+        width: 250px;
+    }
